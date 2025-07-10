@@ -2,15 +2,25 @@ import MockAppLayout from "./layout/MockAppLayout";
 import SectionTitle from "./components/SectionTitle";
 import Card from "./components/Card";
 import Showcase from "./components/Showcase";
+import { useEffect, useState } from "react";
+
 
 export default function App() {
+  const [animationData, setAnimationData] = useState(null);
+
+  useEffect(() => {
+    fetch("https://assets2.lottiefiles.com/packages/lf20_touohxv0.json")
+      .then(res => res.json())
+      .then(setAnimationData);
+  }, []);
+
   return (
     <MockAppLayout>
       {/* Showcase Hero Ad */}
       <Showcase
         title="Introducing AdMotion"
         subtitle="Immersive Native Ad Experiences"
-        animation={null} // Replace with Lottie later
+        animationJson={animationData}
         cta={{ text: "Learn More", url: "https://example.com" }}
       />
 
