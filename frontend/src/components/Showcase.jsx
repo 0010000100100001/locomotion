@@ -2,13 +2,11 @@ import LottiePlayer from "./LottiePlayer";
 
 export default function Showcase({ title, subtitle, animationJson, cta }) {
   return (
-    <div className="relative w-full rounded-xl overflow-hidden bg-[#1f1f27] p-4 shadow-md">
+    <div className="relative w-full rounded-xl overflow-hidden bg-[#1f1f27] p-4 shadow-md" style={{ background: "mediumslateblue" }}>
       {animationJson ? (
         <LottiePlayer src={animationJson} className="w-full h-40" />
       ) : (
-        <div className="w-full h-40 bg-[#2b2d36] flex items-center justify-center text-gray-500 text-sm">
-          Animation Placeholder
-        </div>
+        <div className="w-full h-40 bg-[#2b2d36] flex items-center justify-center text-gray-500 text-sm">Animation Placeholder</div>
       )}
 
       <div className="mt-3">
@@ -18,10 +16,7 @@ export default function Showcase({ title, subtitle, animationJson, cta }) {
 
       {cta && (
         <div className="mt-3">
-          <a
-            href={cta.url}
-            className="inline-block bg-pink-600 hover:bg-pink-700 text-white text-sm px-4 py-2 rounded-full"
-          >
+          <a href={cta.url} className="inline-block bg-pink-600 hover:bg-pink-700 text-white text-sm px-4 py-2 rounded-full">
             {cta.text}
           </a>
         </div>
