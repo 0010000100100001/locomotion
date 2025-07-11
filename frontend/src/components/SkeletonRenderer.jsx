@@ -16,7 +16,6 @@ export default function SkeletonRenderer({ node }) {
         children.map((child, index) => (
           <SkeletonRenderer key={index} node={child} />
         ))}
-        World
     </Component>
   );
 }

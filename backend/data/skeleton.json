@@ -1,20 +1,18 @@
 {
   "component_type": "root",
-  "type": "container",
   "id": "showcase-root",
   "placement": "showcase",
   "props": {
     "x": 0,
     "y": 0,
     "z": 0,
-    "w": 1080,
-    "h": 600,
-    "style": "relative w-full rounded-xl overflow-hidden bg-[#1f1f27] p-4 shadow-md"
+    "w": "100%",
+    "h": "700px",
+    "style": "relative w-full overflow-hidden bg-yellow-500 shadow-md p-4"
   },
   "children": [
     {
       "component_type": "lottie",
-      "type": "media",
       "id": "showcase-animation",
       "props": {
         "x": 0,
@@ -30,7 +28,6 @@
     },
     {
       "component_type": "rich-text",
-      "type": "text",
       "id": "showcase-overlay-text",
       "props": {
         "x": 0,
@@ -44,7 +41,6 @@
     },
     {
       "component_type": "carousel",
-      "type": "media-group",
       "id": "showcase-carousel",
       "props": {
         "x": 0,
@@ -74,7 +70,6 @@
     },
     {
       "component_type": "text",
-      "type": "text",
       "id": "showcase-title",
       "props": {
         "x": 0,
@@ -88,7 +83,6 @@
     },
     {
       "component_type": "text",
-      "type": "text",
       "id": "showcase-subtitle",
       "props": {
         "x": 0,
@@ -102,7 +96,6 @@
     },
     {
       "component_type": "button",
-      "type": "interactive",
       "id": "showcase-cta",
       "props": {
         "x": 0,
