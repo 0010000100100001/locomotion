@@ -3,7 +3,6 @@ import SectionTitle from "./components/SectionTitle";
 import Card from "./components/Card";
 import Showcase from "./components/Showcase";
 import { useEffect, useState } from "react";
-import RainDropsAnimation from "./assets/RainDropsAnimation";
 
 export default function App() {
   const [skeletonData, setSkeletonData] = useState(null);
