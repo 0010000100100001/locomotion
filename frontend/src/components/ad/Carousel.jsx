@@ -1,4 +1,4 @@
-import Button from "./Button";
+import CarouselButton from "./CarouselButton";
 
 // src/components/Carousel.jsx
 export default function Carousel({ x, y, z, w, h, style, items = [] }) {
@@ -29,7 +29,7 @@ export default function Carousel({ x, y, z, w, h, style, items = [] }) {
               <div className="absolute inset-0 bg-black/50 p-3 flex flex-col justify-between ">
                 <div className="text-sm font-semibold text-white">{item.label}</div>
                 {item.data.cta?.url && (
-                  <Button
+                  <CarouselButton
                     label={item.data.cta.text || "View"}
                     className={item.props.style || ''}
                     />
