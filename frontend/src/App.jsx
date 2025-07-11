@@ -9,7 +9,9 @@ export default function App() {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
-    setAnimationData(RainDropsAnimation);
+    fetch("https://jsonkeeper.com/b/CFEF")
+      .then((res) => res.json())
+      .then(setAnimationData);
   }, []);
 
   return (
