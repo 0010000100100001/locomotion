@@ -27,19 +27,6 @@
       }
     },
     {
-      "component_type": "rich-text",
-      "id": "showcase-overlay-text",
-      "props": {
-        "x": 0,
-        "y": 0,
-        "z": 1,
-        "w": 1080,
-        "h": 160,
-        "style": "absolute inset-0 z-10 flex items-center justify-center text-lg font-semibold text-[#f7dc59]",
-        "content": "Listen to our monsoon playlists"
-      }
-    },
-    {
       "component_type": "carousel",
       "id": "showcase-carousel",
       "props": {

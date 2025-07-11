@@ -16,105 +16,14 @@
       "id": "overlay-animation",
       "props": {
         "x": 0,
-        "y": "-50px",
+        "y": 100,
         "z": 0,
         "w": "100%",
         "h": "auto",
-        "style": "opacity-25",
-        "src": "/json/rain_drop_lottie.json",
+        "style": "",
+        "src": "/json/award.json",
         "autoplay": true,
         "loop": true
-      }
-    },
-    {
-      "component_type": "rich-text",
-      "id": "overlay-overlay-text",
-      "props": {
-        "x": 0,
-        "y": 0,
-        "z": 1,
-        "w": 1080,
-        "h": 160,
-        "style": "absolute inset-0 z-10 flex items-center justify-center text-lg font-semibold text-[#f7dc59]",
-        "content": "Listen to our monsoon playlists"
-      }
-    },
-    {
-      "component_type": "carousel",
-      "id": "overlay-carousel",
-      "props": {
-        "x": 15,
-        "y": 240,
-        "z": 1,
-        "w": 360,
-        "h": 200,
-        "style": "overflow-x-auto",
-        "items": [
-          {
-            "id": "item-1",
-            "data": {
-              "label": "Monsoon Vibes",
-              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Monsoon+Vibes",
-              "cta": { "text": "Listen Now", "url": "https://example.com/monsoon-vibes" }
-            },
-            "props": {
-              "x": "auto",
-              "y": "auto",
-              "z": "auto",
-              "w": 140,
-              "h": 180,
-              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
-            }
-          },
-          {
-            "id": "item-2",
-            "data": {
-              "label": "F1 Album",
-              "image": "https://placehold.co/80x180/1d1d1d/999999?text=F1+Album",
-              "cta": { "text": "Play", "url": "https://example.com/f1-album" }
-            },
-            "props": {
-              "x": "auto",
-              "y": "auto",
-              "z": "auto",
-              "w": 80,
-              "h": 180,
-              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
-            }
-          },
-          {
-            "id": "item-3",
-            "data": {
-              "label": "Rainy Day Mix",
-              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Rainy+Day+Mix",
-              "cta": { "text": "Enjoy", "url": "https://example.com/rainy-day-mix" }
-            },
-            "props": {
-              "x": "auto",
-              "y": "auto",
-              "z": "auto",
-              "w": 140,
-              "h": 180,
-              "style": "px-4 py-2 rounded-lg bg-purple-600 text-white text-sm"
-            }
-          },
-          {
-            "id": "item-4",
-            "data": {
-              "label": "Top 40",
-              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Top+40",
-              "cta": { "text": "Listen", "url": "https://example.com/top-40" }
-            },
-            "props": {
-              "x": "auto",
-              "y": "auto",
-              "z": "auto",
-              "w": 140,
-              "h": 180,
-              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
-            }
-          }
-        ]
       }
     },
     {
@@ -122,25 +31,25 @@
       "id": "overlay-title",
       "props": {
         "x": 0,
-        "y": 100,
+        "y": 500,
         "z": 2,
         "w": 390,
         "h": 60,
         "style": "text-4xl font-bold text-slate-200 text-center",
-        "content": "Introducing: Locomotion Ads"
+        "content": "Congratulations!"
       }
     },
     {
       "component_type": "text",
       "id": "overlay-subtitle",
       "props": {
-        "x": 0,
-        "y": 440,
+        "x": "18%",
+        "y": 560,
         "z": 1,
-        "w": 390,
+        "w": 250,
         "h": "auto",
-        "style": "text-sm text-gray-700 text-center",
-        "content": "Immersive Native Ad Experiences"
+        "style": "text-md text-gray-500 text-center",
+        "content": "You've won one-month free trial for JioSaavn Pro! Enjoy ad-free music, unlimited downloads, and more."
       }
     },
     {
@@ -148,12 +57,26 @@
       "id": "overlay-cta",
       "props": {
         "x": "27%",
-        "y": 480,
+        "y": 680,
         "z": 1,
         "w": 180,
         "h": 40,
         "style": "inline-block bg-cyan-800 text-slate-200 text-center text-md px-4 py-2 rounded-md",
-        "label": "Click to Win",
+        "label": "Redeem Offer",
+        "url": "https://example.com"
+      }
+    },
+    {
+      "component_type": "button",
+      "id": "overlay-cta",
+      "props": {
+        "x": "27%",
+        "y": 730,
+        "z": 1,
+        "w": 180,
+        "h": 40,
+        "style": "inline-block text-sm font-bold text-cyan-700 text-center text-md px-4 py-2",
+        "label": "I don't like free trials!",
         "url": "https://example.com"
       }
     }
