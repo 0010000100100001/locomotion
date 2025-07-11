@@ -8,7 +8,7 @@
     "z": 0,
     "w": "100%",
     "h": "540px",
-    "style": "relative w-full overflow-hidden bg-blue-300 shadow-md p-4"
+    "style": "relative w-full overflow-hidden bg-cyan-600 shadow-md p-4"
   },
   "children": [
     {
@@ -16,11 +16,11 @@
       "id": "showcase-animation",
       "props": {
         "x": 0,
-        "y": 0,
+        "y": "-50px",
         "z": 0,
-        "w": 1080,
-        "h": 180,
-        "style": "absolute inset-0 z-0 w-full h-full",
+        "w": "100%",
+        "h": "auto",
+        "style": "opacity-25",
         "src": "/json/rain_drop_lottie.json",
         "autoplay": true,
         "loop": true
@@ -121,13 +121,13 @@
       "component_type": "text",
       "id": "showcase-title",
       "props": {
-        "x": "25%",
+        "x": 0,
         "y": 100,
         "z": 2,
-        "w": 200,
+        "w": 390,
         "h": 60,
-        "style": "text-4xl font-bold text-black",
-        "content": "Introducing AdMotion"
+        "style": "text-4xl font-bold text-slate-800 text-center",
+        "content": "Introducing: Locomotion Ads"
       }
     },
     {
@@ -138,8 +138,8 @@
         "y": 440,
         "z": 1,
         "w": 390,
-        "h": 40,
-        "style": "text-sm text-gray-400 text-center",
+        "h": "auto",
+        "style": "text-sm text-gray-700 text-center",
         "content": "Immersive Native Ad Experiences"
       }
     },
@@ -147,13 +147,13 @@
       "component_type": "button",
       "id": "showcase-cta",
       "props": {
-        "x": "25%",
+        "x": "27%",
         "y": 480,
         "z": 1,
         "w": 180,
         "h": 40,
-        "style": "inline-block bg-blue-600 hover:bg-blue-700 text-white text-center text-md px-4 py-2 rounded-md",
-        "label": "Learn More",
+        "style": "inline-block bg-cyan-800 text-slate-200 text-center text-md px-4 py-2 rounded-md",
+        "label": "Spin to Win",
         "url": "https://example.com"
       }
     }
