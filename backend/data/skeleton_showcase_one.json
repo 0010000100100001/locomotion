@@ -1,19 +1,19 @@
 {
   "component_type": "root",
-  "id": "overlay-root",
-  "placement": "overlay",
+  "id": "showcase-root",
+  "placement": "showcase",
   "props": {
     "x": 0,
     "y": 0,
     "z": 0,
     "w": "100%",
-    "h": "100%",
-    "style": "bg-gray-900/90 flex items-center justify-center"
+    "h": "540px",
+    "style": "relative w-full overflow-hidden bg-cyan-600 shadow-md p-4"
   },
   "children": [
     {
       "component_type": "lottie",
-      "id": "overlay-animation",
+      "id": "showcase-animation",
       "props": {
         "x": 0,
         "y": "-50px",
@@ -28,7 +28,7 @@
     },
     {
       "component_type": "rich-text",
-      "id": "overlay-overlay-text",
+      "id": "showcase-overlay-text",
       "props": {
         "x": 0,
         "y": 0,
@@ -41,7 +41,7 @@
     },
     {
       "component_type": "carousel",
-      "id": "overlay-carousel",
+      "id": "showcase-carousel",
       "props": {
         "x": 15,
         "y": 240,
@@ -119,7 +119,7 @@
     },
     {
       "component_type": "text",
-      "id": "overlay-title",
+      "id": "showcase-title",
       "props": {
         "x": 0,
         "y": 100,
@@ -132,7 +132,7 @@
     },
     {
       "component_type": "text",
-      "id": "overlay-subtitle",
+      "id": "showcase-subtitle",
       "props": {
         "x": 0,
         "y": 440,
@@ -145,7 +145,7 @@
     },
     {
       "component_type": "button",
-      "id": "overlay-cta",
+      "id": "showcase-cta",
       "props": {
         "x": "27%",
         "y": 480,
