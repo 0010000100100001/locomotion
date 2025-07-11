@@ -17,7 +17,7 @@ useEffect(() => {
 
   return (
     <MockAppLayout>
-      <Showcase skeletonData={skeletonData} />
+      {skeletonData?.placement === "showcase" && <Showcase skeletonData={skeletonData} />}
 
       {/* Recently Played */}
       <SectionTitle title="Recently Played" />
