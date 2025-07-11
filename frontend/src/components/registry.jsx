@@ -11,10 +11,10 @@ const Text = ({ content, className }) => (
 );
 
 export const componentRegistry = {
-  root: Root,
-  lottie: LottiePlayer,
+  "root": Root,
+  "lottie": LottiePlayer,
   "rich-text": RichText,
-  carousel: Carousel,
-  button: Button,
-  text: Text,
+  "carousel": Carousel,
+  "button": Button,
+  "text": Text,
 };
