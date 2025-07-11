@@ -3,14 +3,13 @@ import SectionTitle from "./components/SectionTitle";
 import Card from "./components/Card";
 import Showcase from "./components/Showcase";
 import { useEffect, useState } from "react";
+import RainDropsAnimation from "./assets/RainDropsAnimation";
 
 export default function App() {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
-    fetch("https://assets2.lottiefiles.com/packages/lf20_touohxv0.json")
-      .then((res) => res.json())
-      .then(setAnimationData);
+    setAnimationData(RainDropsAnimation);
   }, []);
 
   return (
