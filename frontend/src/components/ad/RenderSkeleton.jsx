@@ -1,5 +1,5 @@
 // components/RenderSkeleton.js
-import { componentRegistry } from "./registry";
+import { componentRegistry } from "../registry";
 
 export default function RenderSkeleton({ node }) {
   if (!node || !node.component_type) return null;
@@ -20,7 +20,7 @@ export default function RenderSkeleton({ node }) {
     <Component {...actualProps}>
       {Array.isArray(children)
         ? children.map((child) => (
-            <RenderSkeleton key={child.id || child.component_type} node={child} />
+            <RenderSkeleton key={child.component_type} node={child} />
           ))
         : null}
     </Component>

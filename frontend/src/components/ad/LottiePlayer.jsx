@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Lottie from "react-lottie-player";
 
-export default function LottiePlayer({ src, className = "", loop = true, autoplay = true }) {
+export default function LottiePlayer({ id, src, className = "", loop = true, autoplay = true }) {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
@@ -19,6 +19,7 @@ export default function LottiePlayer({ src, className = "", loop = true, autopla
 
   return (
     <Lottie
+      id={id}
       loop={loop}
       play={autoplay}
       animationData={animationData}

@@ -1,9 +1,9 @@
 // src/components/registry.js
-import Root from "./Root";
-import LottiePlayer from "./LottiePlayer";
-import RichText from "./RichText";
-import Carousel from "./Carousel";
-import Button from "./Button";
+import Root from "./ad/Root";
+import LottiePlayer from "./ad/LottiePlayer";
+import RichText from "./ad/RichText";
+import Carousel from "./ad/Carousel";
+import Button from "./ad/Button";
 
 // Simple fallback component
 const Text = ({ content, className }) => (
@@ -16,5 +16,5 @@ export const componentRegistry = {
   "rich-text": RichText,
   "carousel": Carousel,
   "button": Button,
-  "text": Text,
+  "text": Text
 };

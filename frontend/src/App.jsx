@@ -1,8 +1,8 @@
 import MockAppLayout from "./layout/MockAppLayout";
-import SectionTitle from "./components/SectionTitle";
-import Card from "./components/Card";
+import SectionTitle from "./components/mock/SectionTitle";
+import Card from "./components/mock/Card";
 import { useEffect, useState } from "react";
-import Showcase from "./components/Showcase";
+import Showcase from "./components/ad/Showcase";
 
 export default function App() {
   const [skeletonData, setSkeletonData] = useState(null);

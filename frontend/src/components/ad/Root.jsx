@@ -1,4 +1,4 @@
-export default function Root({ x = 0, y = 0, z = 0, w = "auto", h = "auto", style = "", children }) {
+export default function Root({ id, x = 0, y = 0, z = 0, w = "auto", h = "auto", style = "", children }) {
   const resolve = (val, fallback) => (val === "auto" ? "auto" : val ?? fallback);
 
   const inlineStyles = {
@@ -11,7 +11,7 @@ export default function Root({ x = 0, y = 0, z = 0, w = "auto", h = "auto", styl
   };
 
   return (
-    <div className={style} style={inlineStyles}>
+    <div id={id} className={style} style={inlineStyles}>
       {children}
     </div>
   );

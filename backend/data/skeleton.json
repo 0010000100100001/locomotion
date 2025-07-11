@@ -64,6 +64,16 @@
             "label": "Top 40",
             "image": "https://placehold.co/160x180?text=Top+40",
             "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+          },
+          {
+            "label": "Top 40",
+            "image": "https://placehold.co/160x180?text=Top+40",
+            "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+          },
+          {
+            "label": "Top 40",
+            "image": "https://placehold.co/160x180?text=Top+40",
+            "cta": { "text": "Listen", "url": "https://example.com/top-40" }
           }
         ]
       }

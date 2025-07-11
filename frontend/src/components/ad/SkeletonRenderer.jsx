@@ -1,4 +1,4 @@
-import { componentRegistry } from "./registry";
+import { componentRegistry } from "../registry";
 
 export default function SkeletonRenderer({ node }) {
   if (!node || !node.component_type) return null;
