@@ -1,27 +1,23 @@
 import MockAppLayout from "./layout/MockAppLayout";
 import SectionTitle from "./components/SectionTitle";
 import Card from "./components/Card";
-import Showcase from "./components/Showcase";
 import { useEffect, useState } from "react";
+import Showcase from "./components/Showcase";
 
 export default function App() {
   const [skeletonData, setSkeletonData] = useState(null);
 
-  useEffect(() => {
+
+useEffect(() => {
     fetch("/json/skeleton.json")
       .then((res) => res.json())
-      .then(setSkeletonData);
+      .then(setSkeletonData)
+      .catch(console.error);
   }, []);
 
   return (
     <MockAppLayout>
-      {/* Showcase Hero Ad */}
-      {skeletonData ? <Showcase
-        title="Introducing AdMotion"
-        subtitle="Immersive Native Ad Experiences"
-        skeletonData={skeletonData}
-        cta={{ text: "Learn More", url: "https://example.com" }}
-      /> : null}
+      <Showcase skeletonData={skeletonData} />
 
       {/* Recently Played */}
       <SectionTitle title="Recently Played" />

@@ -2,6 +2,7 @@
   "component_type": "root",
   "type": "container",
   "id": "showcase-root",
+  "placement": "showcase",
   "props": {
     "x": 0,
     "y": 0,

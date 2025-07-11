@@ -1,3 +1,4 @@
+// src/components/Carousel.jsx
 export default function Carousel({ items = [] }) {
   return (
     <div className="overflow-x-auto">
@@ -14,7 +15,6 @@ export default function Carousel({ items = [] }) {
           >
             <div className="absolute inset-0 bg-black/50 p-3 flex flex-col justify-between pointer-events-none">
               <div className="text-sm font-semibold text-white">{item.label}</div>
-
               {item.cta?.url && (
                 <div className="pointer-events-auto">
                   <a
