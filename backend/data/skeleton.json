@@ -1,4 +1,119 @@
 {
-  "hello": "world",
-  "animationUrl": "https://assets2.lottiefiles.com/packages/lf20_touohxv0.json"
+  "component_type": "root",
+  "type": "container",
+  "id": "showcase-root",
+  "props": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1080,
+    "h": 600,
+    "style": "relative w-full rounded-xl overflow-hidden bg-[#1f1f27] p-4 shadow-md"
+  },
+  "children": [
+    {
+      "component_type": "lottie",
+      "type": "media",
+      "id": "showcase-animation",
+      "props": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1080,
+        "h": 160,
+        "style": "absolute inset-0 z-0 w-full h-full",
+        "src": "/assets/RainDropsAnimation.json",
+        "autoplay": true,
+        "loop": true
+      }
+    },
+    {
+      "component_type": "rich-text",
+      "type": "text",
+      "id": "showcase-overlay-text",
+      "props": {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "w": 1080,
+        "h": 160,
+        "style": "absolute inset-0 z-10 flex items-center justify-center text-lg font-semibold text-[#f7dc59]",
+        "content": "Listen to our monsoon playlists"
+      }
+    },
+    {
+      "component_type": "carousel",
+      "type": "media-group",
+      "id": "showcase-carousel",
+      "props": {
+        "x": 0,
+        "y": 170,
+        "z": 1,
+        "w": 1080,
+        "h": 200,
+        "style": "mt-4",
+        "items": [
+          {
+            "label": "Maalik",
+            "image": "https://placehold.co/160x180?text=Maalik",
+            "cta": { "text": "Book Now", "url": "https://example.com/maalik" }
+          },
+          {
+            "label": "F1 Album",
+            "image": "https://placehold.co/160x180?text=F1+Album",
+            "cta": { "text": "Play", "url": "https://example.com/f1-album" }
+          },
+          {
+            "label": "Top 40",
+            "image": "https://placehold.co/160x180?text=Top+40",
+            "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+          }
+        ]
+      }
+    },
+    {
+      "component_type": "text",
+      "type": "text",
+      "id": "showcase-title",
+      "props": {
+        "x": 0,
+        "y": 380,
+        "z": 1,
+        "w": 1080,
+        "h": 60,
+        "style": "mt-3 text-lg font-semibold text-white",
+        "content": "Introducing AdMotion"
+      }
+    },
+    {
+      "component_type": "text",
+      "type": "text",
+      "id": "showcase-subtitle",
+      "props": {
+        "x": 0,
+        "y": 440,
+        "z": 1,
+        "w": 1080,
+        "h": 40,
+        "style": "text-sm text-gray-400",
+        "content": "Immersive Native Ad Experiences"
+      }
+    },
+    {
+      "component_type": "button",
+      "type": "interactive",
+      "id": "showcase-cta",
+      "props": {
+        "x": 0,
+        "y": 490,
+        "z": 1,
+        "w": 200,
+        "h": 50,
+        "style": "inline-block bg-pink-600 hover:bg-pink-700 text-white text-sm px-4 py-2 rounded-full",
+        "label": "Learn More",
+        "url": "https://example.com",
+        "variant": "primary"
+      }
+    }
+  ]
 }
