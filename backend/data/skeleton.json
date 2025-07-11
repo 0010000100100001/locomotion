@@ -23,7 +23,7 @@
         "w": 1080,
         "h": 160,
         "style": "absolute inset-0 z-0 w-full h-full",
-        "src": "/assets/RainDropsAnimation.json",
+        "src": "/json/rain_drop_lottie.json",
         "autoplay": true,
         "loop": true
       }
