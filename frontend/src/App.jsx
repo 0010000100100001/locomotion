@@ -9,8 +9,9 @@ export default function App() {
   const [skeletonData, setSkeletonData] = useState(null);
 
 
-useEffect(() => {
-    fetch("/json/skeleton.json")
+  useEffect(() => {
+    const adUnit = window.location.search.includes("ad=overlay") ? "overlay" : "showcase";
+    fetch(`/json/skeleton_${adUnit}_one.json`)
       .then((res) => res.json())
       .then(setSkeletonData)
       .catch(console.error);
@@ -33,6 +34,22 @@ useEffect(() => {
 
           {/* New Releases */}
           <SectionTitle title="New Releases" />
+          <div className="flex overflow-x-auto space-x-4">
+            <Card image="https://c.saavncdn.com/760/Sapphire-English-2025-20250623223610-500x500.jpg" text="Sapphire" />
+            <Card image="https://c.saavncdn.com/182/Pehla-Tu-Duja-Tu-From-Son-Of-Sardaar-2-Hindi-2025-20250707201004-500x500.jpg" text="Pehla Tu Duja Tu" />
+            <Card image="https://c.saavncdn.com/279/F1-The-Album-Deluxe-English-2025-20250624223443-500x500.jpg" text="F1 The Album" />
+          </div>
+
+          {/* Recommended JioTunes */}
+          <SectionTitle title="Recommended JioTunes" />
+          <div className="flex overflow-x-auto space-x-4">
+            <Card image="https://c.saavncdn.com/940/Shivers-English-2021-20211022044815-500x500.jpg" text="Shivers" />
+            <Card image="https://c.saavncdn.com/artists/Ellie_Goulding_006_20221105190218_500x500.jpg" text="Ellie Goulding" />
+            <Card image="https://c.saavncdn.com/artists/Shakira_002_20220916145812_500x500.jpg" text="Shakira" />
+          </div>
+
+          {/* Top Charts */}
+          <SectionTitle title="Top Charts" />
           <div className="flex overflow-x-auto space-x-4">
             <Card image="https://c.saavncdn.com/760/Sapphire-English-2025-20250623223610-500x500.jpg" text="Sapphire" />
             <Card image="https://c.saavncdn.com/182/Pehla-Tu-Duja-Tu-From-Son-Of-Sardaar-2-Hindi-2025-20250707201004-500x500.jpg" text="Pehla Tu Duja Tu" />
