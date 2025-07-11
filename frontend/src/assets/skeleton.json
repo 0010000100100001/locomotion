@@ -1,0 +1,49 @@
+{
+  "id": "showcase-1",
+  "background": "#1f1f27",
+  "animationType": "url",
+  "animationUrl": "https://assets2.lottiefiles.com/packages/lf20_touohxv0.json",
+  "rows": [
+    {
+      "type": "text-stack",
+      "components": [
+        {
+          "type": "text",
+          "style": "title",
+          "value": "Introducing AdMotion"
+        },
+        {
+          "type": "text",
+          "style": "subtitle",
+          "value": "Immersive Native Ad Experiences"
+        }
+      ]
+    },
+    {
+      "type": "button-row",
+      "components": [
+        {
+          "type": "button",
+          "value": "Learn More",
+          "link": "https://example.com",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "type": "carousel",
+      "components": [
+        {
+          "type": "card",
+          "image": "https://placehold.co/100x100/1f1f27/a0a0a0?text=New",
+          "text": "Native Cards"
+        },
+        {
+          "type": "card",
+          "image": "https://placehold.co/100x100/1f1f27/a0a0a0?text=Fun",
+          "text": "Ad Showcase"
+        }
+      ]
+    }
+  ]
+}

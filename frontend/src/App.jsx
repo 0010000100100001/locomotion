@@ -6,23 +6,23 @@ import { useEffect, useState } from "react";
 import RainDropsAnimation from "./assets/RainDropsAnimation";
 
 export default function App() {
-  const [animationData, setAnimationData] = useState(null);
+  const [skeletonData, setSkeletonData] = useState(null);
 
   useEffect(() => {
-    fetch("https://jsonkeeper.com/b/CFEF")
+    fetch("/json/skeleton.json")
       .then((res) => res.json())
-      .then(setAnimationData);
+      .then(setSkeletonData);
   }, []);
 
   return (
     <MockAppLayout>
       {/* Showcase Hero Ad */}
-      <Showcase
+      {skeletonData ? <Showcase
         title="Introducing AdMotion"
         subtitle="Immersive Native Ad Experiences"
-        animationJson={animationData}
+        skeletonData={skeletonData}
         cta={{ text: "Learn More", url: "https://example.com" }}
-      />
+      /> : null}
 
       {/* Recently Played */}
       <SectionTitle title="Recently Played" />
