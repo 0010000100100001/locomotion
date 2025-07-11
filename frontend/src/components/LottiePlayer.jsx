@@ -1,6 +1,6 @@
 import Lottie from "react-lottie-player";
 
-export default function LottiePlayer({ src, loop = true, autoplay = true, className = "w-full h-40" }) {
+export default function LottiePlayer({ src, className = "", loop = true, autoplay = true }) {
   return (
     <Lottie
       loop={loop}

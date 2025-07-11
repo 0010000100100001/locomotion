@@ -6,6 +6,7 @@ export default function Card({ image, text, borderRadius = "lg", textPosition = 
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        borderRadius: "10px",
       }}
     >
       <div className={`absolute inset-0 bg-black/40 flex items-end p-3 ${textPosition === "center" ? "items-center justify-center" : ""}`}>
