@@ -19,7 +19,7 @@
         "y": 0,
         "z": 0,
         "w": 1080,
-        "h": 160,
+        "h": 180,
         "style": "absolute inset-0 z-0 w-full h-full",
         "src": "/json/rain_drop_lottie.json",
         "autoplay": true,
@@ -43,37 +43,76 @@
       "component_type": "carousel",
       "id": "showcase-carousel",
       "props": {
-        "x": 0,
-        "y": 170,
+        "x": 15,
+        "y": 240,
         "z": 1,
-        "w": 1080,
+        "w": 360,
         "h": 200,
-        "style": "mt-4",
+        "style": "overflow-x-auto",
         "items": [
           {
-            "label": "Maalik",
-            "image": "https://placehold.co/160x180?text=Maalik",
-            "cta": { "text": "Book Now", "url": "https://example.com/maalik" }
+            "id": "item-1",
+            "data": {
+              "label": "Monsoon Vibes",
+              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Monsoon+Vibes",
+              "cta": { "text": "Listen Now", "url": "https://example.com/monsoon-vibes" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 140,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
+            }
           },
           {
-            "label": "F1 Album",
-            "image": "https://placehold.co/160x180?text=F1+Album",
-            "cta": { "text": "Play", "url": "https://example.com/f1-album" }
+            "id": "item-2",
+            "data": {
+              "label": "F1 Album",
+              "image": "https://placehold.co/80x180/1d1d1d/999999?text=F1+Album",
+              "cta": { "text": "Play", "url": "https://example.com/f1-album" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 80,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
+            }
           },
           {
-            "label": "Top 40",
-            "image": "https://placehold.co/160x180?text=Top+40",
-            "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+            "id": "item-3",
+            "data": {
+              "label": "Rainy Day Mix",
+              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Rainy+Day+Mix",
+              "cta": { "text": "Enjoy", "url": "https://example.com/rainy-day-mix" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 140,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-purple-600 text-white text-sm"
+            }
           },
           {
-            "label": "Top 40",
-            "image": "https://placehold.co/160x180?text=Top+40",
-            "cta": { "text": "Listen", "url": "https://example.com/top-40" }
-          },
-          {
-            "label": "Top 40",
-            "image": "https://placehold.co/160x180?text=Top+40",
-            "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+            "id": "item-4",
+            "data": {
+              "label": "Top 40",
+              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Top+40",
+              "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 140,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
+            }
           }
         ]
       }
@@ -85,7 +124,7 @@
         "x": 0,
         "y": 380,
         "z": 1,
-        "w": 1080,
+        "w": 200,
         "h": 60,
         "style": "mt-3 text-lg font-semibold text-white",
         "content": "Introducing AdMotion"
@@ -98,7 +137,7 @@
         "x": 0,
         "y": 440,
         "z": 1,
-        "w": 1080,
+        "w": 200,
         "h": 40,
         "style": "text-sm text-gray-400",
         "content": "Immersive Native Ad Experiences"
