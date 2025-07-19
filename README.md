@@ -26,7 +26,7 @@ npm run dev -- --host
 - http://localhost:5173/?ad=showcase
 
 ## 🔁 Backend (Python + Flask)
-Serves .json and .lottie files
+Serves `.json` files
 
 ### ▶️ Run:
 ```bash
