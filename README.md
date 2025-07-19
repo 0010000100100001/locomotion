@@ -9,13 +9,9 @@ This is a lightweight web + backend POC for dynamically rendering interactive Lo
 ## 🌐 Frontend (React + Vite)
 
 ### 🔧 Features:
-- Mock app layout
-- Fixed top tabs and bottom nav
-- Scrollable content area
 - Dynamic components rendered via `skeleton.json`
 - Lottie animation integration
 - TailwindCSS + JSX for flexible styling
-- Supports query param: `?ad=overlay` or `?ad=showcase`
 
 ### 🧪 Try:
 ```bash
@@ -25,9 +21,9 @@ npm run dev -- --host
 
 #### Visit:
 
-http://localhost:5173/?ad=overlay
-
-http://localhost:5173/?ad=showcase
+- http://localhost:5173/
+- http://localhost:5173/?ad=overlay
+- http://localhost:5173/?ad=showcase
 
 ## 🔁 Backend (Python + Flask)
 Serves .json and .lottie files
