@@ -1,0 +1,44 @@
+{
+  "component_type": "root",
+  "id": "overlay-root",
+  "placement": "overlay",
+  "props": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": "100%",
+    "h": "100%",
+    "style": "bg-gray-900/90 flex items-center justify-center"
+  },
+  "children": [
+    {
+      "component_type": "lottie",
+      "id": "overlay-animation",
+      "props": {
+        "x": 0,
+        "y": 0,
+        "z": 5,
+        "w": "100%",
+        "h": "100%",
+        "style": "",
+        "src": "/json/moon8.json",
+        "autoplay": true,
+        "loop": true
+      }
+    },
+    {
+      "component_type": "button",
+      "id": "overlay-cta",
+      "props": {
+        "x": "27%",
+        "y": 630,
+        "z": 6,
+        "w": 180,
+        "h": 40,
+        "style": "inline-block bg-cyan-800 text-slate-200 text-center text-md px-4 py-2 rounded-md",
+        "label": "Sponsored Link",
+        "url": "/?ad=showcase"
+      }
+    }
+  ]
+}

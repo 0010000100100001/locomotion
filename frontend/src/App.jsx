@@ -9,13 +9,23 @@ export default function App() {
   const [skeletonData, setSkeletonData] = useState(null);
 
 
-  useEffect(() => {
-    const adUnit = window.location.search.includes("ad=overlay") ? "overlay" : "showcase";
-    fetch(`/json/skeleton_${adUnit}_one.json`)
-      .then((res) => res.json())
-      .then(setSkeletonData)
-      .catch(console.error);
-  }, []);
+useEffect(() => {
+  const query = new URLSearchParams(window.location.search);
+  const adUnit = query.get("ad");
+
+  let filename = "skeleton_overlay_two.json"; // default fallback
+
+  if (adUnit === "overlay") {
+    filename = "skeleton_overlay_one.json";
+  } else if (adUnit === "showcase") {
+    filename = "skeleton_showcase_one.json";
+  }
+
+  fetch(`/json/${filename}`)
+    .then((res) => res.json())
+    .then(setSkeletonData)
+    .catch(console.error);
+}, []);
 
   return (
     <MockAppLayout>

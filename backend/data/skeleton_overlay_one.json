@@ -16,7 +16,7 @@
       "id": "overlay-animation",
       "props": {
         "x": 0,
-        "y": 100,
+        "y": 0,
         "z": 0,
         "w": "100%",
         "h": "auto",
@@ -31,7 +31,7 @@
       "id": "overlay-title",
       "props": {
         "x": 0,
-        "y": 500,
+        "y": 400,
         "z": 2,
         "w": 390,
         "h": 60,
@@ -44,7 +44,7 @@
       "id": "overlay-subtitle",
       "props": {
         "x": "18%",
-        "y": 560,
+        "y": 460,
         "z": 1,
         "w": 250,
         "h": "auto",
@@ -57,13 +57,13 @@
       "id": "overlay-cta",
       "props": {
         "x": "27%",
-        "y": 680,
+        "y": 580,
         "z": 1,
         "w": 180,
         "h": 40,
         "style": "inline-block bg-cyan-800 text-slate-200 text-center text-md px-4 py-2 rounded-md",
         "label": "Redeem Offer",
-        "url": "https://example.com"
+        "url": "/"
       }
     },
     {
@@ -71,13 +71,13 @@
       "id": "overlay-cta",
       "props": {
         "x": "27%",
-        "y": 730,
+        "y": 630,
         "z": 1,
         "w": 180,
         "h": 40,
         "style": "inline-block text-sm font-bold text-cyan-700 text-center text-md px-4 py-2",
         "label": "I don't like free trials!",
-        "url": "/"
+        "url": "/?ad=showcase"
       }
     }
   ]
