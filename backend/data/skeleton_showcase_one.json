@@ -1,0 +1,148 @@
+{
+  "component_type": "root",
+  "id": "showcase-root",
+  "placement": "showcase",
+  "props": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": "100%",
+    "h": "540px",
+    "style": "relative w-full overflow-hidden bg-cyan-600 shadow-md p-4"
+  },
+  "children": [
+    {
+      "component_type": "lottie",
+      "id": "showcase-animation",
+      "props": {
+        "x": 0,
+        "y": "-50px",
+        "z": 0,
+        "w": "100%",
+        "h": "auto",
+        "style": "opacity-25",
+        "src": "/json/rain_drop_lottie.json",
+        "autoplay": true,
+        "loop": true
+      }
+    },
+    {
+      "component_type": "carousel",
+      "id": "showcase-carousel",
+      "props": {
+        "x": 15,
+        "y": 240,
+        "z": 1,
+        "w": 360,
+        "h": 200,
+        "style": "overflow-x-auto",
+        "items": [
+          {
+            "id": "item-1",
+            "data": {
+              "label": "Monsoon Vibes",
+              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Monsoon+Vibes",
+              "cta": { "text": "Listen Now", "url": "https://example.com/monsoon-vibes" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 140,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
+            }
+          },
+          {
+            "id": "item-2",
+            "data": {
+              "label": "F1 Album",
+              "image": "https://placehold.co/80x180/1d1d1d/999999?text=F1+Album",
+              "cta": { "text": "Play", "url": "https://example.com/f1-album" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 80,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
+            }
+          },
+          {
+            "id": "item-3",
+            "data": {
+              "label": "Rainy Day Mix",
+              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Rainy+Day+Mix",
+              "cta": { "text": "Enjoy", "url": "https://example.com/rainy-day-mix" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 140,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-purple-600 text-white text-sm"
+            }
+          },
+          {
+            "id": "item-4",
+            "data": {
+              "label": "Top 40",
+              "image": "https://placehold.co/140x180/1d1d1d/999999?text=Top+40",
+              "cta": { "text": "Listen", "url": "https://example.com/top-40" }
+            },
+            "props": {
+              "x": "auto",
+              "y": "auto",
+              "z": "auto",
+              "w": 140,
+              "h": 180,
+              "style": "px-4 py-2 rounded-lg bg-pink-600 text-white text-sm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component_type": "text",
+      "id": "showcase-title",
+      "props": {
+        "x": 0,
+        "y": 100,
+        "z": 2,
+        "w": 390,
+        "h": 60,
+        "style": "text-4xl font-bold text-slate-800 text-center",
+        "content": "Introducing: Locomotion Ads"
+      }
+    },
+    {
+      "component_type": "text",
+      "id": "showcase-subtitle",
+      "props": {
+        "x": 0,
+        "y": 440,
+        "z": 1,
+        "w": 390,
+        "h": "auto",
+        "style": "text-sm text-gray-700 text-center",
+        "content": "Immersive Native Ad Experiences"
+      }
+    },
+    {
+      "component_type": "button",
+      "id": "showcase-cta",
+      "props": {
+        "x": "27%",
+        "y": 480,
+        "z": 1,
+        "w": 180,
+        "h": 40,
+        "style": "inline-block bg-cyan-800 text-slate-200 text-center text-md px-4 py-2 rounded-md",
+        "label": "Click to Win",
+        "url": "/?ad=overlay"
+      }
+    }
+  ]
+}
